@@ -50,11 +50,12 @@
       </video>
       <section class="hero-section">
         <div class="container">
-          <h1>Welcome to My Website</h1>
+          <h1>Legal expertise you can rely on</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-            varius vehicula nisl non tempus. Proin dapibus scelerisque nisl,
-            vitae tincidunt arcu gravida in.
+            Trusted Legal Excellence: Your Partner in Legal Solutions.
+            Experience the difference with our services
+            committed to delivering exceptional legal services tailored to your
+            needs.
           </p>
         </div>
       </section>
@@ -94,15 +95,32 @@
     <!-- Services Section -->
     <section id="services" class="bg-light py-5">
       <div class="container">
-        <h2 class="text-center mb-4">Our Services</h2>
+        <h2 class="text-center mb-4">Practice Areas</h2>
         <div class="row">
           <div class="col-lg-4">
             <div class="card mb-4">
               <div class="card-body">
-                <h5 class="card-title">Legal Consultation</h5>
+                <h5 class="card-title">Real Estate</h5>
                 <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Mauris volutpat dapibus felis.
+                  Expertly navigating the complexities of real estate law, we
+                  provides comprehensive legal solutions tailored to each
+                  client's unique needs. From property transactions to dispute
+                  resolution, we offer top-tier representation in all aspects of
+                  real estate practice.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="card-title">Immigration Law</h5>
+                <p class="card-text">
+                  With profound expertise in immigration law, our firm assists
+                  clients in achieving their immigration goals and navigating
+                  the complex legal landscape. From visa applications to
+                  deportation defense, we provide strategic counsel and diligent
+                  advocacy for individuals and businesses alike.
                 </p>
               </div>
             </div>
@@ -112,8 +130,11 @@
               <div class="card-body">
                 <h5 class="card-title">Civil Litigation</h5>
                 <p class="card-text">
-                  Quisque euismod lorem in orci accumsan, a faucibus metus
-                  finibus.
+                  We are dedicated to resolving a wide range of civil disputes
+                  through strategic advocacy and rigorous representation. From
+                  contract disputes to personal injury claims, we skillfully
+                  navigate the complexities of civil litigation to protect our
+                  clients' rights and achieve favorable outcomes.
                 </p>
               </div>
             </div>
@@ -121,10 +142,13 @@
           <div class="col-lg-4">
             <div class="card mb-4">
               <div class="card-body">
-                <h5 class="card-title">Business Law</h5>
+                <h5 class="card-title">Notary Public Services</h5>
                 <p class="card-text">
-                  Pellentesque habitant morbi tristique senectus et netus et
-                  malesuada fames ac turpis egestas.
+                  Providing reliable and efficient notary public services, our
+                  service ensure the authenticity and legality of your important
+                  documents. With meticulous attention to detail and adherence
+                  to legal requirements, we offer convenient and trusted
+                  notarization services for individuals and businesses.
                 </p>
               </div>
             </div>
@@ -134,7 +158,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-5">
+    <section id="contact" class="py-5 contact-us">
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
@@ -147,18 +171,23 @@
             </ul>
           </div>
           <div class="col-lg-6">
-            <form>
-              <div class="mb-3">
-                <label for="name" class="form-label">Your Name</label>
-                <input type="text" class="form-control" id="name" />
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" class="form-control" required />
               </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Your Email</label>
-                <input type="email" class="form-control" id="email" />
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" class="form-control" required />
               </div>
-              <div class="mb-3">
-                <label for="message" class="form-label">Message</label>
-                <textarea class="form-control" id="message" rows="5"></textarea>
+              <div class="form-group">
+                <label for="message">Message:</label><br />
+                <textarea
+                  id="message"
+                  class="form-control"
+                  rows="5"
+                  required
+                ></textarea>
               </div>
               <button type="submit" class="btn btn-primary">Submit</button>
             </form>
@@ -189,5 +218,7 @@
 
     <!-- Bootstrap JS -->
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/smtp.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

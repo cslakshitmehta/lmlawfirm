@@ -45,53 +45,62 @@
     </header>
 
     <div class="container mt-5 mb-5 contact-us">
-        <h1>Contact Us</h1>
-        <div class="row">
-          <div class="col-md-6">
-            <form>
-              <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" class="form-control" id="name" placeholder="Enter your name">
-              </div>
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="Enter your email">
-              </div>
-              <div class="form-group">
-                <label for="phone">Phone</label>
-                <input type="text" class="form-control" id="phone" placeholder="Enter your phone number">
-              </div>
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-          </div>
-          <div class="col-md-6">
-            <h3>Contact Information</h3>
-            <p><strong>Address:</strong> 123 Law Street, City, State, ZIP</p>
-            <p><strong>Phone:</strong> +1 123-456-7890</p>
-            <p><strong>Email:</strong> info@example.com</p>
-          </div>
+      <h1>Contact Us</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" class="form-control" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" class="form-control" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label><br />
+              <textarea
+                id="message"
+                class="form-control"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <h3>Contact Information</h3>
+          <p><strong>Address:</strong> 30 Topflight Dr, Unit - 4A, Mississauga, ON L5S0A8</p>
+          <p><strong>Phone:</strong> (905) 564 7080, (905) 564 1938</p>
+          <p><strong>Email:</strong> info@lmlawfirm.ca</p>
         </div>
       </div>
+    </div>
 
     <!-- Footer -->
     <footer class="footer bg-dark text-white text-center py-3">
       <div class="container">
         <ul class="social-media">
-            <li>
-                <a href="https://www.linkedin.com/company/lakshitmehtalawpc/"  target="_blank">
-                    <img src="img/linkedin-logo.png" alt="linkedin" />
-                </a>
-            </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/company/lakshitmehtalawpc/"
+              target="_blank"
+            >
+              <img src="img/linkedin-logo.png" alt="linkedin" />
+            </a>
+          </li>
         </ul>
-        <span>&copy; 2023 Lakshit Mehta Law Professional Corporation - All rights reserved.</span>
+        <span
+          >&copy; 2023 Lakshit Mehta Law Professional Corporation - All rights
+          reserved.</span
+        >
       </div>
     </footer>
 
     <!-- Bootstrap JS -->
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/smtp.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
