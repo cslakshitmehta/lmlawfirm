@@ -1,8 +1,7 @@
 .home-page .header {
-  position: relative;
+  position: absolute;
   width: 100%;
   z-index: 1;
-  background-color: red;
 }
 
 .video-container {
@@ -12,7 +11,7 @@
 }
 
 .video-container video {
-  position: relative;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -22,12 +21,12 @@
 }
 
 .hero-section {
-  position: relative;
+  position: absolute;
   color: #fff;
   top: 50%;
   transform: translate(0, -50%);
   left: 4%;
-  max-width: 100%;
+  max-width: 50%;
 }
 
 .navbar-brand {
@@ -61,18 +60,27 @@
   resize: none;
 }
 
-@media screen and (min-width: 768px) {
-  .navbar-dark {
-    background-color: transparent;
+@media (max-width: 768px) {
+  p {
+    font-size: 12px;
   }
 
-  .home-page .header,
-  .video-container,
-  .video-container video {
-    position: absolute;
+  .navbar-brand {
+    max-width: 100px;
+  }
+
+  .navbar-collapse {
+    background: #343434;
+  }
+
+  .navbar-nav li.nav-item {
+    padding: 0 20px;
   }
 
   .hero-section {
-    max-width: 50%;
+    max-width: 100%;
+    bottom: 0px;
+    transform: unset;
+    top: unset;
   }
 }
